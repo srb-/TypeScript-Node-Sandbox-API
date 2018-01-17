@@ -1,17 +1,22 @@
 
-## VSCode TypeScript Sandbox, REPL & Mocha Testrunner
+## VS Code, TypeScript, NodeJS, Express Sandbox for API prototyping
 
 Environment that supports quick language learning and experimenting in the following ways:
 
-1. Compile, run or debug (with breakpoints) any arbitrary TS file (CTRL-F5) in /src
-2. Write tests that are run automatically against any TS file (name files xxxx.tests.ts)
-3. Runs a TS REPL (ts-node) in the Terminal window. Use .load xxxx.ts to execute TS files, .clear to reset scope
+1. Runs a simple Express server in Dev, source in /src/server/
+2. Browser code in /src/client 
+3. Common/shared interfaces and routines in /src/common
+4. Write tests that are run automatically against any TS file (name files xxxx.tests.ts)
 
 
 ### Todos:
 
++ [ ] get debugging going on both server and browser with source maps
++ [ ] get an API call working
++ [ ] get Express server running on startup
 + [ ] get linting going for semicolons, etc
 + [ ] fix output window showing after every save
++ [ ] serve static files
 + [x] clean this readme up properly
 + [x] make a src folder to keep it clean (but keep test with files) May cause errors and make repl annoying to use
 + [x] get DevDocs going offline for Chai, typescript, everything!!

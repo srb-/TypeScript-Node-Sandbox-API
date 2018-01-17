@@ -2,10 +2,27 @@
   "compilerOptions": {
       "module": "commonjs",
       "moduleResolution": "node",
-      "target": "es6",
+      "target": "es5",
       "lib": [
-        "es6", 
-        "dom"
-        ]
-  }
-}                      
+          "dom", 
+          "es5", 
+          "es2015",
+          "es2015.promise",
+          "es6"
+      ],
+      "experimentalDecorators": true,
+      "noImplicitAny": false,
+      "noImplicitThis": true,
+      "strictNullChecks": false,
+      "removeComments": false,
+      "allowJs":false,
+      "sourceMap": true,
+      "emitDecoratorMetadata": true,
+      "allowSyntheticDefaultImports": true,
+      "suppressImplicitAnyIndexErrors": true
+  },
+  "compileOnSave": true,
+  "exclude": [
+      "node_modules"
+  ]
+}
