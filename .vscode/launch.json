@@ -1,25 +1,36 @@
 {
-    "version": "0.2.0",
+    "version": "2.0.0",
+    "compounds": [
+        {
+            "name": "Server+Client",
+            "sourceMaps": true,
+            "configurations": [
+                "Server - NodeJS Local",
+                "Client - Chrome"
+            ],
+            "trace": true
+        }
+    ],
     "configurations": [
         {
-            "name": "Current TS Tests File",
-            "type": "node",
+            "name": "Client - Chrome",
+            "type": "chrome",
             "request": "launch",
-            "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
-            "args": ["-r", "ts-node/register", "${relativeFile}"],
-            "cwd": "${workspaceRoot}",
-            "protocol": "inspector",
-            "internalConsoleOptions": "openOnSessionStart"
+            "sourceMaps": true,
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceRoot}",
+            "sourceMapPathOverrides": {
+                "webpack:///./*": "${workspaceRoot}/*"
+            },
+            "preLaunchTask": ""
         },
         {
-            "name": "Current TS File",
             "type": "node",
-            "request": "launch",
-            "args": ["${relativeFile}"],
-            "runtimeArgs": ["-r", "ts-node/register"],
-            "cwd": "${workspaceRoot}",
-            "protocol": "inspector",
-            "internalConsoleOptions": "openOnSessionStart"
+            "request": "attach",
+            "name": "Server - NodeJS Local",
+            "port": 9229,
+            "restart": true,
+            "preLaunchTask": ""
         }
     ]
 }

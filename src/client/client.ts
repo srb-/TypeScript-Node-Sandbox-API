@@ -1,2 +1,2 @@
 
-console.log('wuddup');
+console.log('Hello from the Client (Chrome)');
