@@ -4,10 +4,10 @@
   "description": "",
   "main": "src/server/server.ts",
   "repository": {
-    "url": "https://github.com/srb-/TypeScript-Sandbox-REPL.git"
+    "url": "https://github.com/srb-/TypeScript-Node-Sandbox-API.git"
   },
   "scripts": {
-    "start": "nodemon --inspect src/server/server.js --ext ts --watch src/"
+    "start": "tsc -w & nodemon --inspect src/server/server.js --ext ts --watch src/"
   },
   "author": "Stephen Beath",
   "license": "ISC",

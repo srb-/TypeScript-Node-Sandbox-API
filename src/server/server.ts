@@ -8,8 +8,6 @@ app.use(express.static('src/client'))
 
 app.listen(8080, () => console.log('Example app listening on port 8080!'))
 
-app.get('/api', (req, res) => res.send('Got an API call!'))
-
-app.get('/', (req, res) => {
-    console.log('Hello from the Server (NodeJS)');
+app.get('/api', (req, res) => {
+    res.send('Hello from the Server (NodeJS)');
 });
