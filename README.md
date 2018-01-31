@@ -11,13 +11,13 @@ Environment that supports quick language learning and experimenting in the follo
 
 ### Todos:
 
-+ [ ] get debugging going on both server and browser with source maps
-+ [X] get an API call working
-+ [X] get Express server running on startup
++ [x] get debugging going on both server and browser with source maps
++ [x] get an API call working
++ [x] get Express server running on startup
 + [ ] get linting going for semicolons, etc
 + [ ] fix output window showing after every save
-+ [ ] serve static files
-+ [ ] get client compiling on change
++ [x] serve static files
++ [x] get client compiling on change
 + [x] clean this readme up properly
 + [x] make a src folder to keep it clean (but keep test with files) May cause errors and make repl annoying to use
 + [x] get DevDocs going offline for Chai, typescript, everything!!
