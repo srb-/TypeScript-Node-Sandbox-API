@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "tsc -w",
-    "dev": "nodemon --inspect src/server/server.js --ext ts --watch src/"
+    "debug": "nodemon --inspect-brk src/server/server.js --ext ts --watch src/"
   },
   "author": "Stephen Beath",
   "license": "ISC",
