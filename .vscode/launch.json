@@ -18,11 +18,7 @@
             "request": "launch",
             "sourceMaps": true,
             "url": "http://localhost:8080",
-            "webRoot": "${workspaceRoot}",
-            "sourceMapPathOverrides": {
-                "webpack:///./*": "${workspaceRoot}/*"
-            },
-            "preLaunchTask": ""
+            "webRoot": "${workspaceRoot}/src/client",
         },
         {
             "name": "Server - NodeJS Local",
