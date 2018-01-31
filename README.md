@@ -55,3 +55,6 @@ In ts-node: return value of last run expression is underscore _
 if getting red squigly lines on import in VSCode try pressing F1 to reload window
 
 in sugar use .raw to get unchained underlying object
+
+Look at your old quasar-TS to find the right combination of options for debuggin!
+orr... use inspect-brk but only after an F5, not on launch!

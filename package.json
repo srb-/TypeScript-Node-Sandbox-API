@@ -7,7 +7,8 @@
     "url": "https://github.com/srb-/TypeScript-Node-Sandbox-API.git"
   },
   "scripts": {
-    "start": "tsc -w & nodemon --inspect src/server/server.js --ext ts --watch src/"
+    "start": "tsc -w",
+    "dev": "nodemon --inspect src/server/server.js --ext ts --watch src/"
   },
   "author": "Stephen Beath",
   "license": "ISC",
